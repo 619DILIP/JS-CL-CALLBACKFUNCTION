@@ -4,7 +4,7 @@ let theRest = document.getElementById("theRest");
 /*
 A callback function is simply a function passed as an argument to be called at a later time. Often this follows a pattern of
 passing callback functionB() as a parameter to functionA() so that when functionA() is complete it will call FunctionB(). 
-Below are several callback functions, each of which adds a bit of text to the HTML page, waits 3 seconds, then calls another 
+Below are several callback functions, each of which adds a bit of text to the HTML page, waits 2 seconds, then calls another 
 callback function. 
 
 setTimeout() is a global function which takes in a callback function and an amount of milliseconds to wait before calling it.
