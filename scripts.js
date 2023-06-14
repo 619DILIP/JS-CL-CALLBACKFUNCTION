@@ -8,7 +8,9 @@ Below are several callback functions, each of which adds a bit of text to the HT
 callback function. 
 
 setTimeout() is a global function which takes in a callback function and an amount of milliseconds to wait before calling it.
-setTimeout(callback, 5000); will wait 5 seconds before invoking the function called "callback".
+setTimeout(callback, 5000); will wait 5 seconds before invoking the function called "callback". Note that when we pass a 
+callback function like this, we don't include a parameter list with parentheses '()'. We are passing a reference to the
+function, not invoking it.
 
 TODO: Your goal is to have the page render Hamlet's famous speech from Shakespeare's play. If you aren't sure how that goes 
 simply research "Hamlet's famous speech". Replace references to "placeholder" with the correct callbacks so that we assemble
@@ -19,54 +21,54 @@ last.
 // This is an IIFE, "Immediately Invoked Function Expression" a function which is called as soon as it is defined. 
 // Start here, this will call itself when the page loads.
 (function start() {
-    setTimeout(placeholder, 2000);
+    setTimeout(placeholder, 1000);
 })();
 
 // Callback function 1
 function friendsRomansCountrymen() {
     opening.innerText += 'Friends, Romans, Countrymen, ';
-    setTimeout(placeholder, 2000);
+    setTimeout(placeholder, 1000);
 }
 
 // Callback function 2
 function toBe() {
     opening.textContent += 'To be, ';
-    setTimeout(placeholder, 2000);
+    setTimeout(placeholder, 1000);
 }
 
 // Callback function 3
 function thatIsTheQuestion() {
     opening.textContent += 'that is the question: ';
-    setTimeout(placeholder, 2000);
+    setTimeout(placeholder, 1000);
 }
 
 // Callback function 4
 function myKingdomForAHorse() {
     opening.innerText += 'My kingdom for a horse! ';
-    setTimeout(placeholder, 2000);
+    setTimeout(placeholder, 1000);
 }
 
 // Callback function 5
 function orNotToBe() {
     opening.textContent += 'or not to be, ';
-    setTimeout(placeholder, 2000);
+    setTimeout(placeholder, 1000);
 }
 
 // Callback function 6
 function placeholder() {
-    console.log('This function does nothing. ');
+    console.log('This placeholder function does nothing. ');
 }
 
 // Callback function 7
 function lendMeYourEars() {
     opening.innerText += 'lend me your ears. ';
-    setTimeout(placeholder, 2000);
+    setTimeout(placeholder, 1000);
 }
 
 // Callback function 8
 function aHorse() {
     opening.innerText += 'A horse! ';
-    setTimeout(placeholder, 2000);
+    setTimeout(placeholder, 1000);
 }
 
 // Callback function 9
