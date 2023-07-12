@@ -128,3 +128,13 @@ dist
 .yarn/build-state.yml
 .yarn/install-state.gz
 .pnp.*
+
+### Exa ###
+*chromedriver*
+*google-chrome-stable*
+*LATEST_RELEASE*
+driver/
+target/
+.idea/
+*.iml
+*.class
